@@ -23,7 +23,7 @@ namespace Subscription.Controllers
             subscriptionRepostiory = _subscriptionRepostiory;
         }
         [HttpGet]
-        public ActionResult<IEnumerable<SubscriptionName>> GetBooks()
+        public ActionResult<IEnumerable<SubscriptionName>> GetSubscription()
         {
 
             return Ok(subscriptionRepostiory.getAllSubscription());
